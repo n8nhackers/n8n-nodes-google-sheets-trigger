@@ -1,53 +1,78 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-google-sheets-trigger",
   "version": "0.1.0",
-  "description": "",
+  "description": "This is a trigger node for Google Sheets.",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n",
+    "workflow",
+    "n8n-community-node-package",
+    "document generator",
+    "handlebars",
+    "n8n hackers",
+    "html generator",
+    "pdf generator",
+    "email generator"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Miquel Colomer",
+    "email": "miquel@n8nhackers.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/mcolomer/n8n-nodes-google-sheets-trigger.git"
   },
   "main": "index.js",
   "scripts": {
+    "lint": "eslint nodes credentials package.json --no-error-on-unmatched-pattern",
+    "lint:fix": "eslint nodes credentials package.json --no-error-on-unmatched-pattern --fix",
+    "link": "npm link",
+    "link:n8n": "cd ~/.n8n/nodes/node_modules && npm link n8n-nodes-document-generator",
+    "unlink:n8n": "cd ~/.n8n/nodes/node_modules && npm unlink n8n-nodes-document-generator",
     "build": "tsc && gulp build:icons",
+    "prepare": "npm run build",
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
-    "lint": "tslint -p tsconfig.json -c tslint.json && eslint nodes credentials package.json",
-    "lintfix": "tslint --fix -p tsconfig.json -c tslint.json && eslint nodes credentials package.json --fix",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "tsc": "tsc",
+    "n8n:start": "n8n start --tunnel",
+    "publish": "npm publish --access public"
   },
   "files": [
     "dist"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
-    ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/Google/Sheet/GoogleSheetsTrigger.node.js"
     ]
   },
   "devDependencies": {
-    "@types/express": "^4.17.6",
-    "@types/request-promise-native": "~1.0.15",
-    "@typescript-eslint/parser": "^5.29.0",
-    "eslint-plugin-n8n-nodes-base": "^1.5.4",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^18.6.3",
+    "@types/request-promise-native": "^1.0.18",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-deprecation": "^1.3.2",
+    "eslint-plugin-eslint-plugin": "^5.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.3.4",
+    "eslint-plugin-n8n-nodes-base": "^1.5.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "gulp": "^4.0.2",
-    "n8n-core": "^0.125.0",
-    "n8n-workflow": "^0.107.0",
+    "n8n-core": "^0.128.0",
+    "n8n-workflow": "^0.110.0",
     "prettier": "^2.7.1",
-    "tslint": "^6.1.2",
-    "typescript": "~4.6.0"
+    "prettier-plugin-jsdoc": "^0.3.38",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "xlsx": "^0.18.5"
   }
 }
