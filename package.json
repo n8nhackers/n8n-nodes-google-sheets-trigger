@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-google-sheets-trigger",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This is a trigger node for Google Sheets.",
   "keywords": [
     "n8n",
@@ -35,8 +35,7 @@
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
     "tsc": "tsc",
-    "n8n:start": "n8n start --tunnel",
-    "publish": "npm publish --access public"
+    "n8n:start": "n8n start --tunnel"
   },
   "files": [
     "dist"
