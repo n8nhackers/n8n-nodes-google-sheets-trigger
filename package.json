@@ -6,12 +6,8 @@
     "n8n",
     "workflow",
     "n8n-community-node-package",
-    "document generator",
-    "handlebars",
     "n8n hackers",
-    "html generator",
-    "pdf generator",
-    "email generator"
+    "google-sheets-trigger"
   ],
   "license": "MIT",
   "homepage": "",
