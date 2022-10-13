@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-google-sheets-trigger",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "This is a trigger node for Google Sheets.",
   "keywords": [
     "n8n",
