@@ -32,12 +32,12 @@ Using this trigger, you will be able to recover only new rows from any Google sh
 [License](#license)
 
 # TLDR
-Don't want to read? Import a [sample workflow](https://app.n8n.io/workflows/1790) to test this node with random samples.
-![Generate dynamic contents for EMAILS or HTML pages](images/workflow-sample.jpeg?raw=true "Generate dynamic contents for EMAILS or HTML pages")
+Don't want to read? Import the sample workflow [Recover only new rows from Google Sheets](https://app.n8n.io/workflows/1812) to test this node.
+![Recover only new rows from Google Sheets](images/sample-workflow.jpeg "Recover only new rows from Google Sheets")
 
 # Installation
 Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
-Plugin uses polling capabilities. You will need to recreate your Docker instance to see poll Times selector.
+The plugin uses polling capabilities. You will need to recreate your Docker instance to see the poll Times selector.
 
 # Operations
 Using this node you recover only new rows added to any Google sheet.
@@ -48,19 +48,19 @@ All credentials are compatible.
 
 # Compatibility
 Tested with node 0.197.1.
-You need a n8n version with polling enabled.
+You need an n8n version with polling enabled.
 
 # Usage
 
 With this node, you will be able to recover new rows added to any sheet.
 
-Basically, define your Google sheets node as usual (credentials, spreadsheet id, range, raw data) and choose your pollTime
+Define your Google sheets node as usual (credentials, spreadsheet id, range, raw data) and choose your poll time
 
 ![Poll time selector](images/polltimes.png)
 
-If you want the sample sheet, access to the spreadsheet at
+If you want the sample sheet, access the spreadsheet at
 https://docs.google.com/spreadsheets/d/1UzzxzEy6N-B_A3bWGEm-iDa0fM1n7v2JNb2a7q8y_To/edit?usp=sharing
-and copy to your Google Drive.
+and copy it to your Google Drive.
 
 Google sheet contains a list of numbered rows:
 
@@ -78,14 +78,14 @@ Then, create a new template for this node:
 ```
 
 First, execute the workflow directly to recover all rows and test the message to Telegram.
-Polling and recovering new rows only work for active tasks in background.
+Polling and recovering new rows only work for active tasks in the background.
 Define the poll time (every 5 minutes, every hour, every day), and activate your task to get only new rows. 
-Check executions to ensure that Workflows is executed every defined poll time.
+Check executions to ensure that Workflows are executed every defined poll time.
 
 Now, add new numbered rows (row 24, row, 25, ...) to your Google sheet.
 If everything works as expected, a new message is sent to the Telegram channel with new rows.
 
-This is a sample how the message looks (I added rows 14 to 23).
+This is a sample of how the message looks (I added rows 14 to 23).
 
 ![image](images/telegram-sample.png)
 
@@ -140,7 +140,7 @@ Node by [n8nhackers.com](https://n8nhackers.com). For productive use and consult
 Special thanks to [N8n nodemation](https://n8n.io) workflow automation by Jan Oberhauser.
 
 # Resources
-If you want to build your own custom n8n nodes, check the [N8N documentation on custom nodes](https://docs.n8n.io/nodes/creating-nodes/create-n8n-nodes-module.html).
+If you want to build your custom n8n nodes, check the [N8N documentation on custom nodes](https://docs.n8n.io/nodes/creating-nodes/create-n8n-nodes-module.html).
 
 
 # Licenses
