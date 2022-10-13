@@ -32,11 +32,11 @@ Using this trigger, you will be able to recover only new rows from any Google sh
 [License](#license)
 
 # TLDR
-Don't want to read? Import the sample workflow [Recover only new rows from Google Sheets](https://app.n8n.io/workflows/1812) to test this node.
+Don't want to read? Import the sample workflow [Recover only new rows from Google Sheets](https://app.n8n.io/workflows/1812){:target="_blank"} to test this node.
 ![Recover only new rows from Google Sheets](images/sample-workflow.jpeg "Recover only new rows from Google Sheets")
 
 # Installation
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/){:target="_blank"} in the n8n community nodes documentation.
 The plugin uses polling capabilities. You will need to recreate your Docker instance to see the poll Times selector.
 
 # Operations
@@ -58,16 +58,14 @@ Define your Google sheets node as usual (credentials, spreadsheet id, range, raw
 
 ![Poll time selector](images/polltimes.png)
 
-If you want the sample sheet, access the spreadsheet at
-https://docs.google.com/spreadsheets/d/1UzzxzEy6N-B_A3bWGEm-iDa0fM1n7v2JNb2a7q8y_To/edit?usp=sharing
-and copy it to your Google Drive.
+If you want the sample sheet, access the [sample spreadsheet](https://docs.google.com/spreadsheets/d/1UzzxzEy6N-B_A3bWGEm-iDa0fM1n7v2JNb2a7q8y_To/edit?usp=sharing){:target="_blank"} and copy it to your Google Drive.
 
 Google sheet contains a list of numbered rows:
 
 ![Google sheet](images/contents-google-sheet.jpeg)
 
 
-You have a sample below where I combine new rows from Google Sheets with [Generate dynamic contents for EMAILS or HTML pages](https://app.n8n.io/workflows/1790) (this is another community node created by me).
+You have a sample below where I combine new rows from Google Sheets with [Generate dynamic contents for EMAILS or HTML pages](https://app.n8n.io/workflows/1790){:target="_blank"} (this is another community node created by me).
 
 Then, create a new template for this node:
 
@@ -132,7 +130,7 @@ npx n8n
 To make this node even better, please let us know, [how you use it](mailto:miquel@n8nhackers.com). Commits are always welcome.
 
 # Issues
-If you have any issues, please [let us know on GitHub](https://github.com/n8nhackers/n8n-nodes-google-sheets-trigger/issues).
+If you have any issues, please [let us know on GitHub](https://github.com/n8nhackers/n8n-nodes-google-sheets-trigger/issues){:target="_blank"}.
 
 # About
 Node by [n8nhackers.com](https://n8nhackers.com). For productive use and consulting on this, [contact us please](mailto:contact@n8nhackers.com).
@@ -140,9 +138,9 @@ Node by [n8nhackers.com](https://n8nhackers.com). For productive use and consult
 Special thanks to [N8n nodemation](https://n8n.io) workflow automation by Jan Oberhauser.
 
 # Resources
-If you want to build your custom n8n nodes, check the [N8N documentation on custom nodes](https://docs.n8n.io/nodes/creating-nodes/create-n8n-nodes-module.html).
+If you want to build your custom n8n nodes, check the [N8N documentation on custom nodes](https://docs.n8n.io/nodes/creating-nodes/create-n8n-nodes-module.html){:target="_blank"}.
 
 
 # Licenses
-* [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
-* [MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
+* [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/){:target="_blank"} workflow automation platform.
+* [MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md){:target="_blank"}
