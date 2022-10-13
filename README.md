@@ -37,7 +37,6 @@ Don't want to read? Import the sample workflow [Recover only new rows from Googl
 
 # Installation
 Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
-The plugin uses polling capabilities. You will need to recreate your Docker instance to see the poll Times selector.
 
 # Operations
 Using this node you recover only new rows added to any Google sheet.
